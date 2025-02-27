@@ -29,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSpaceGrotsk.variable} ${openSans.className} antialiased`}
+        className={`${geistSpaceGrotsk.variable} ${openSans.className} ${geistSatisfy.variable} antialiased min-h-screen`}
       >
-        {children}
+        <div className="mx-auto w-3/5 md:w-full">{children}</div>
       </body>
     </html>
   );
