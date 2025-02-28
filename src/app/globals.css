@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --sub-background: #282828;
+  --card-border: #3f3f3f;
+  --date-text: #575757;
 }
 
 @media (prefers-color-scheme: dark) {
