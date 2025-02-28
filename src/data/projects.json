@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Portfolio Website",
+    "type": "Web App",
+    "imgSrc": "https://via.placeholder.com/150",
+    "techStack": ["React", "Tailwind CSS", "Framer Motion"],
+    "event": "Personal Project",
+    "year": "2024",
+    "description": "A sleek and modern portfolio website to showcase my projects and skills.",
+    "liveLink": "https://myportfolio.com",
+    "githubLink": "https://github.com/username/portfolio",
+    "docker": "false"
+  },
+  {
+    "title": "Task Manager",
+    "type": "Full-Stack App",
+    "imgSrc": "https://via.placeholder.com/150",
+    "techStack": ["React", "Node.js", "MongoDB", "Express"],
+    "event": "Hackathon Submission",
+    "year": "2023",
+    "description": "A full-stack task management app with user authentication and real-time updates.",
+    "liveLink": "https://taskmanager.com",
+    "githubLink": "https://github.com/username/task-manager",
+    "docker": "true"
+  },
+  {
+    "title": "AI Image Generator",
+    "type": "Machine Learning",
+    "imgSrc": "https://via.placeholder.com/150",
+    "techStack": ["Python", "TensorFlow", "Flask"],
+    "event": "University Project",
+    "year": "2022",
+    "description": "An AI-powered tool that generates unique images based on user input.",
+    "liveLink": "https://aiimagegen.com",
+    "githubLink": "https://github.com/username/ai-image-generator",
+    "docker": "false"
+  },
+  {
+    "title": "E-commerce Platform",
+    "type": "Full-Stack Web App",
+    "imgSrc": "https://via.placeholder.com/150",
+    "techStack": ["Next.js", "Stripe API", "PostgreSQL"],
+    "event": "Freelance Project",
+    "year": "2024",
+    "description": "An e-commerce website with secure payments and an admin dashboard.",
+    "liveLink": "https://myecommerce.com",
+    "githubLink": "https://github.com/username/ecommerce-platform",
+    "docker": "true"
+  },
+  {
+    "title": "3D Model Viewer",
+    "type": "3D Web App",
+    "imgSrc": "https://via.placeholder.com/150",
+    "techStack": ["Three.js", "React Three Fiber", "Blender"],
+    "event": "Side Project",
+    "year": "2023",
+    "description": "An interactive 3D model viewer for showcasing animations and designs.",
+    "liveLink": "https://3dviewer.com",
+    "githubLink": "https://github.com/username/3d-model-viewer",
+    "docker": "false"
+  }
+]
