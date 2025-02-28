@@ -1,3 +1,6 @@
+import ExperienceCard from "./ui/experience-card";
+import experinces from "../data/experince.json";
+
 function About() {
   return (
     <div className="grid grid-cols-10 gap-4 my-10 py-10 h-screen">
@@ -29,14 +32,14 @@ function About() {
           <h1 className="text-2xl">Experience</h1>
         </div>
         <div className="flex flex-col justify-start">
-          <div className="pt-5">
-            <h1 className="font-[family-name:var(--font-space-grotsk)] font-[500]">
-              EPEC Volunteer!
-            </h1>
-            <p className="text-[0.9rem]">VIT, Pune</p>
-            <p className="text-[var(--date-text)] pb-5">june 2022 - dec 2022</p>
-            <hr className="text-[var(--date-text)]" />
-          </div>
+          {experinces.map((item) => (
+            <ExperienceCard
+              key={item.title}
+              title={item.title}
+              instName={item.instName}
+              date={item.date}
+            />
+          ))}
         </div>
       </div>
     </div>
