@@ -32,16 +32,16 @@ function ProjectCard({
     <div className="p-4">
       {/* titles */}
       <h1 className="text-5xl font-[family-name:var(--font-space-grotsk)] pb-2">
-        Wincenzo
+        {title}
       </h1>
       <h2 className="text-2xl font-[family-name:var(--font-space-grotsk)] text-[var(--card-border)] pb-2">
-        Type of app
+        {type}
       </h2>
       {/* img */}
       <div className="grid grid-cols-10">
         <div className="col-span-8 mr-4">
           <img
-            src="nature.jpg"
+            src="nature.jpg" //imagesrc
             alt="project-img"
             className="object-cover rounded-2xl p-1"
           />
@@ -50,7 +50,11 @@ function ProjectCard({
           <h1 className="font-[family-name:var(--font-space-grotsk)] text-[var(--card-border)] text-3xl text-center">
             Tech Stack
           </h1>
-          <div>HTML, CSS, JAVASCRIPT</div>
+          <div className="flex flex-col items-center text-xl mt-5">
+            {techStack.map((tech, id) => (
+              <h1 key={id}>{tech}</h1>
+            ))}
+          </div>
         </div>
       </div>
       {/* texts */}
@@ -59,41 +63,38 @@ function ProjectCard({
           <p className="text-xl font-[family-name:var(--font-space-grotsk)] text-[var(--card-border)]">
             Type
           </p>
-          <p>Web APP</p>
+          <p>{type}</p>
           <p className="text-xl font-[family-name:var(--font-space-grotsk)] text-[var(--card-border)]">
             Event
           </p>
-          <p>College project</p>
+          <p>{event}</p>
           <p className="text-xl font-[family-name:var(--font-space-grotsk)] text-[var(--card-border)]">
             Year
           </p>
-          <p>2022</p>
+          <p>{year}</p>
         </div>
         <div className="p-2">
           <h1 className="text-xl font-[family-name:var(--font-space-grotsk)] text-[var(--card-border)]">
             Description
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            similique, voluptatem praesentium minima incidunt sed amet maxime
-            adipisci et aliquid nisi ipsa temporibus vero consequatur voluptate
-            non tempora odit. Nam.
+            {description}
           </p>
         </div>
         <div className="w-[20%] p-5 flex flex-col justify-start gap-2 font-[family-name:var(--font-space-grotsk)]">
-          <Link href={""}>
+          <Link href={liveLink}>
             <div className="flex items-center ">
               <FaExternalLinkAlt className="inline size-3" />
               <p className="p-2">Visit </p>
             </div>
           </Link>
-          <Link href={""}>
+          <Link href={githubLink}>
             <div className="flex items-center">
               <FaGithub className="inline size-3" />
               <p className="p-2">Github</p>
             </div>
           </Link>
-          <Link href={""}>
+          <Link href={docker}>
             <div className="flex items-center">
               <FaDocker className="inline size-4" />
               <p className="p-2">Docker </p>
